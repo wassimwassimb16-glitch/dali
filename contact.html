@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dépôt de Plainte - E-Poste Tunisie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="E-Poste Tunisie Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Suivi des Colis</a></li>
+            <li><a href="team.html">Retraites & Allocations</a></li>
+            <li><a href="blog.html">Sensibilisation Sécuritaire</a></li>
+            <li><a href="contact.html">Dépôt de Plainte</a></li>
+            <li><a href="legals.html">Mentions Légales</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Déposez Votre Plainte</h2>
+        <form action="mailto:contact@epostetunisie.tn" method="post" enctype="text/plain">
+            <label>Nom complet :</label>
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            
+            <label>Type de problème :</label>
+            <select name="type_probleme" required>
+                <option value="">Sélectionnez</option>
+                <option value="colis_perdu">Colis perdu</option>
+                <option value="retard_service">Retard de service</option>
+                <option value="arnaque">Arnaque suspectée</option>
+                <option value="autre">Autre</option>
+            </select>
+            
+            <label>Description :</label>
+            <textarea name="description" rows="5" placeholder="Décrivez le problème en détail" required></textarea>
+            
+            <input type="submit" value="Envoyer la Plainte" class="btn">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2026 E-Poste Tunisie. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
